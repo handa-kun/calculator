@@ -1,0 +1,9 @@
+.drop {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-weight: bold;
+    color: var(--indigo);
+}

@@ -1,0 +1,18 @@
+.switch {
+    display: flex;
+    justify-content: center;
+    background: var(--gray-light);
+    width: auto;
+    height: 38px;
+}
+
+.switchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+
+    width: 108px;
+    height: 36px;
+}

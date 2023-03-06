@@ -1,0 +1,10 @@
+.total {
+    width: 232px;
+    background: var(--gray-light);
+    text-align: right;
+    padding-right: 8px;
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+}

@@ -1,0 +1,17 @@
+.wrapperNumber {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.number {
+    width: 72px;
+    height: 48px;
+}
+
+.number0 {
+    flex: 1;
+}
+
+.numberStr {}

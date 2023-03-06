@@ -1,0 +1,12 @@
+.button {
+    border: 1px solid var(--button-border);
+    border-radius: 6px;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.indigo {
+    background-color: var(--indigo);
+}

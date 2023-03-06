@@ -1,0 +1,6 @@
+.equalButton {
+    width: 232px;
+    height: 64px;
+
+    color: var(--primary);
+}
