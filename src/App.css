@@ -22,6 +22,8 @@
 .calc {
   grid-area: c;
 
+  cursor: grab;
+
 }
 
 .bar {
@@ -32,7 +34,6 @@
 
   border: 2px dashed #C4C4C4;
   border-radius: 6px;
-
 }
 
 .calc_button {

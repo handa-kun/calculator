@@ -11,18 +11,22 @@ export const Switch = ({ className, ...props }: SwitchProps): JSX.Element => {
 
     return (
         <div className={styles.switch}>
-            <Button className={styles.switchButton} appearance='primary'>
-                <EyeIcon className={cn(styles.eye, {
-                    [styles.active]: !active
+            <Button className={cn(styles.switchButton, {
+                [styles.disabled]: active,
+            })} appearance='primary' onClick={() => setActive(true)}>
+                <EyeIcon className={cn(className, {
+                    [styles.active]: !active,
+                    [styles.eye]: active
                 })} />
 
                 Runtime
             </Button>
             <Button className={cn(styles.switchButton, {
                 [styles.disabled]: !active,
-            })} appearance='primary'>
-                <ArrowsIcon className={cn(styles.arrow, {
-                    [styles.active]: active
+            })} appearance='primary' onClick={() => setActive(false)}>
+                <ArrowsIcon className={cn(className, {
+                    [styles.active]: active,
+                    [styles.arrow]: !active
                 })} />
                 Constructor
             </Button>

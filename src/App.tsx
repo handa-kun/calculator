@@ -6,18 +6,26 @@ function App() {
     <div className="App">
       <div className='switch'><Switch /></div>
       <div className='calc'>
-        <Card>
-          <Total />
-        </Card>
-        <Card>
-          <Actions />
-        </Card>
-        <Card>
-          <Numbers />
-        </Card>
-        <Card>
-          <Equal />
-        </Card>
+        <div className='item1' draggable>
+          <Card>
+            <Total />
+          </Card>
+        </div>
+        <div className='item2' draggable>
+          <Card>
+            <Actions />
+          </Card>
+        </div>
+        <div className='item3' draggable>
+          <Card>
+            <Numbers />
+          </Card>
+        </div>
+        <div className='item4' draggable>
+          <Card>
+            <Equal />
+          </Card>
+        </div>
       </div>
       <div className='bar'>
         <Drop />

@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 
 export const Equal = ({ className, ...props }: EqualProps): JSX.Element => {
     return (
-        <div className={styles.equal}>
+        <div className={styles.equal} draggable={true}>
             <Button className={styles.equalButton} appearance='indigo'>=</Button>
         </div>
     )

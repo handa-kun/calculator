@@ -5,7 +5,7 @@ import { Button } from '../Button/Button';
 
 export const Numbers = ({ className, ...props }: NumbersProps): JSX.Element => {
     return (
-        <div className={styles.wrapperNumber}>
+        <div className={styles.wrapperNumber} draggable={true}>
             <Button
                 appearance='primary'
                 className={cn(styles.number, styles.number1)}>7</Button>

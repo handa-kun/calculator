@@ -10,7 +10,7 @@ const initialState: MathState = {
     accumulated: 0
 };
 
-export const mathReducer = (state = initialState, action): MathState => {
+export const mathReducer = (state = initialState, action: any): MathState => {
     switch (action.type) {
         case CalcActionTypes.ADD: {
 

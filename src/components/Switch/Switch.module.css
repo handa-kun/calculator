@@ -21,7 +21,8 @@
     stroke: var(--indigo);
 }
 
-.arrow {
+.arrow,
+.eye {
     stroke: #4D5562;
 }
 

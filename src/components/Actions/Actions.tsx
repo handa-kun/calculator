@@ -1,11 +1,10 @@
 import { ActionsProps } from './Actions.props';
 import styles from './Actions.module.css';
-import cn from 'classnames';
 import { Button } from '../Button/Button';
 
 export const Actions = ({ children, className, ...props }: ActionsProps): JSX.Element => {
     return (
-        <div className={styles.action}>
+        <div className={styles.action} draggable={true}>
             <Button
                 appearance='primary'
                 className={styles.actions}>/</Button>
