@@ -16,3 +16,17 @@
     width: 108px;
     height: 36px;
 }
+
+.active {
+    stroke: var(--indigo);
+}
+
+.arrow {
+    stroke: #4D5562;
+}
+
+.disabled {
+    background-color: var(--gray-light);
+    border: 0;
+    outline: none;
+}
