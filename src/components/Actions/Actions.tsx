@@ -3,20 +3,25 @@ import styles from './Actions.module.css';
 import { Button } from '../Button/Button';
 
 export const Actions = ({ children, className, ...props }: ActionsProps): JSX.Element => {
+
+    const btnValues = ['/', 'X', '-', '+'];
+
     return (
         <div className={styles.action} draggable={true}>
-            <Button
-                appearance='primary'
-                className={styles.actions}>/</Button>
-            <Button
-                appearance='primary'
-                className={styles.actions}>X</Button>
-            <Button
-                appearance='primary'
-                className={styles.actions}>-</Button>
-            <Button
-                appearance='primary'
-                className={styles.actions}>+</Button>
+            {btnValues.map((btn, i) => {
+                return (
+                    <Button
+                        key={i}
+                        appearance='primary'
+                        className={styles.actions}
+                        value={btn}
+                        onClick={() => console.log(`${btn}`)
+                        }
+                    >
+                        {btn}
+                    </Button>
+                )
+            })}
         </div>
     )
 };
