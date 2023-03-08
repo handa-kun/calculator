@@ -5,9 +5,7 @@ import { ReactComponent as ImageIcon } from './image.svg';
 
 export const Drop = ({ className, ...props }: DropProps): JSX.Element => {
     return (
-        <div
-            className={styles.drop}
-        >
+        <div className={styles.drop}>
             <div>
                 <ImageIcon />
             </div>

@@ -2,11 +2,21 @@ import { NumbersProps } from './Numbers.props';
 import styles from './Numbers.module.css';
 import cn from 'classnames';
 import { Button } from '../Button/Button';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../redux/store';
+import { CalcActionTypes } from '../../redux/types/math';
 
 export const Numbers = ({ className, ...props }: NumbersProps): JSX.Element => {
+    const dispatch = useDispatch<AppDispatch>();
+
+    const add = (value: number) => {
+        dispatch({ type: CalcActionTypes.ADD, payload: number })
+    };
+
     return (
-        <div className={styles.wrapperNumber} draggable={true}>
+        <div className={styles.wrapperNumber}>
             <Button
+                onClick={() => add()}
                 appearance='primary'
                 className={cn(styles.number, styles.number1)}>7</Button>
             <Button

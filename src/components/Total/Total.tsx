@@ -1,10 +1,10 @@
 import { TotalProps } from './Total.props';
 import styles from './Total.module.css';
-import { useState } from 'react';
+import { useTypedSelector } from '../hooks/useTypedSelector';
 
 
 export const Total = ({ className, ...props }: TotalProps): JSX.Element => {
-    const [total, setTotal] = useState<number>(0);
+    const total = useTypedSelector(state => state.mathReducer.display);
 
     return (
         <div className={styles.total}>

@@ -12,21 +12,8 @@ const initialState: MathState = {
 
 export const mathReducer = (state = initialState, action: any): MathState => {
     switch (action.type) {
-        case CalcActionTypes.ADD: {
-
-        }
-        case CalcActionTypes.DIVIDE: {
-
-        }
-        case CalcActionTypes.MULTIPLY: {
-
-        }
-        case CalcActionTypes.SUBTRACT: {
-
-        }
-        case CalcActionTypes.UPDATE: {
-
-        }
+        case CalcActionTypes.ADD:
+            return { ...state, display: state.display + action.payload }
         default:
             return state
     }
