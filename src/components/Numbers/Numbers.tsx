@@ -4,13 +4,13 @@ import cn from 'classnames';
 import { Button } from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../redux/store';
-import { CalcActionTypes } from '../../redux/types/math';
+import { updateActionCreator } from '../../redux/reducers/mathReducer';
 
 export const Numbers = ({ className, ...props }: NumbersProps): JSX.Element => {
     const dispatch = useDispatch<AppDispatch>();
 
     const add = (value: number | string) => {
-        dispatch({ type: CalcActionTypes.ADD, payload: value })
+        dispatch(updateActionCreator(value));
     };
 
     const btnValues = [

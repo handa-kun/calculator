@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 
 export const Actions = ({ children, className, ...props }: ActionsProps): JSX.Element => {
 
-    const btnValues = ['/', 'X', '-', '+'];
+    const btnValues = ['/', 'x', '-', '+'];
 
     return (
         <div className={styles.action} draggable={true}>
@@ -15,8 +15,6 @@ export const Actions = ({ children, className, ...props }: ActionsProps): JSX.El
                         appearance='primary'
                         className={styles.actions}
                         value={btn}
-                        onClick={() => console.log(`${btn}`)
-                        }
                     >
                         {btn}
                     </Button>

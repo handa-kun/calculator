@@ -3,7 +3,7 @@ import { mathReducer } from './reducers/mathReducer';
 
 
 const rootReducer = combineReducers({
-    mathReducer
+    math: mathReducer
 });
 
 export const store = configureStore({

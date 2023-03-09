@@ -4,7 +4,7 @@ import { useTypedSelector } from '../hooks/useTypedSelector';
 
 
 export const Total = ({ className, ...props }: TotalProps): JSX.Element => {
-    const total = useTypedSelector(state => state.mathReducer.display);
+    const total = useTypedSelector(state => state.math.display);
 
     return (
         <div className={styles.total}>
