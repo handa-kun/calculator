@@ -9,7 +9,7 @@ import { updateActionCreator } from '../../redux/reducers/mathReducer';
 export const Numbers = ({ className, ...props }: NumbersProps): JSX.Element => {
     const dispatch = useDispatch<AppDispatch>();
 
-    const add = (value: number | string) => {
+    const update = (value: number | string) => {
         dispatch(updateActionCreator(value));
     };
 
@@ -32,7 +32,7 @@ export const Numbers = ({ className, ...props }: NumbersProps): JSX.Element => {
                         })}
                         value={btn}
                         onClick={() => {
-                            add(btn)
+                            update(btn)
                         }}
                     >
                         {btn}
